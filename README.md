@@ -3,7 +3,7 @@
 Introduction:
 The Time Tracker VS Code Extension is a powerful tool designed to enhance productivity and help developers efficiently manage their time while working on projects within Visual Studio Code. With its user-friendly interface and comprehensive features, this extension provides a seamless time tracking experience, allowing developers to focus on their work and monitor their progress effortlessly.
 
-Key Features:
+Key Features can be added:
 
 * Automatic Time Tracking: The extension intelligently captures the time spent on each file and project within the VS Code environment, eliminating the need for manual tracking. It starts tracking as soon as you open a project and automatically stops when you switch to another task or close the project.
 * Project and Task Management: Keep track of multiple projects and their associated tasks. Create, organize, and manage projects with ease, ensuring efficient project management and improved time allocation.
