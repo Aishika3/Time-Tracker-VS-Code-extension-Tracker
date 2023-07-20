@@ -1,36 +1,17 @@
 .card-container{
     width: 320px;
-    height: 400px;
-    perspective: 1000px;
+    height: auto;
 }
 .card{
-    transform-style: preserve-3d;
     position: relative;
     border-radius: 5px;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
-    transition: transform 0.5s;
-}
-.rotate{
-    transform: rotateY(180deg);
-}
-.frontside,
-.backside{
-    width: 100%;
-    height: 100%;
     padding: 5px;
     border: 1px solid #c9c9c9;
     border-radius: 5px;
-    background-color: #F5F5F5;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-.frontside{
-    z-index: 1;
-}
-.backside{
-    transform: rotateY(180deg);
+    background: linear-gradient(-90deg, #B2B2B2, #FFFFFF);
+    margin: 20px;
 }
 .card-row{
     display: flex;
@@ -50,11 +31,10 @@
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    margin: 0 auto;
 }
 .card-img{
     border-radius: 5px;
-    width: 100vh;
+    width: 100%;
     height: 200px;
 }
 footer{
@@ -62,33 +42,27 @@ footer{
     justify-content: flex-end;
 }
 .btn-functional{
-     display: inline-block;
-     border-radius: 5px;
+    display: inline-block;
+    border-radius: 5px;
     padding: 5px;
     background-color: #7B7B7D;
-}
-.flip-btn{
-    position: absolute;
-    float: right;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    right: 0;
-    bottom: 0;
-    transform: translate(0,50%);
-    margin: 5px;
-    background-color: #FFC000;
     cursor: pointer;
 }
 button{
     text-decoration: none;
     border: none;
+    position: relative;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    color: black;
 }
-.back-btn{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color:#FFC000;
-    margin: 5px;
-    cursor: pointer;
+.title::after{
+    display: block;
+    position: absolute;
+    background-color: #FFFFFF;
+    content: "";
+    width: 30px;
+    height: 2px;
+    margin: 0 auto;
+    left: 50%;
 }
