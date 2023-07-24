@@ -1,24 +1,28 @@
 import React, { useState } from "react";
 import "./login.css";
-import { Signup } from "./signup";
+import { Login } from "./login.jsx";
 
-export const Login = () => {
-  const [showSignup, setShowSignup] = useState(false);
+export const Signup = () => {
+  const [showLogin, setShowLogin] = useState(false);
 
-  const handleSignupLinkClick = (event) => {
+  const handleLoginLinkClick = (event) => {
     event.preventDefault();
-    setShowSignup(true);
+    setShowLogin(true);
   };
 
   return (
     <div className="login-container">
-      {showSignup ? (
-        <Signup />
+      {showLogin ? (
+        <Login />
       ) : (
         <>
-          <div className="header-text">Welcome Back</div>
+          <div className="header-text">Create an account</div>
           <div className="form-container">
             <form>
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" />
+              </div>
               <div className="form-group">
                 <label htmlFor="email">Email</label>
                 <input type="email" id="email" placeholder="Enter your email" />
@@ -31,17 +35,17 @@ export const Login = () => {
                   placeholder="Enter your password"
                 />
               </div>
-              <button type="submit">Login</button>
+              <button type="submit">Sign Up</button>
             </form>
           </div>
           <div className="footer-text">
-            New user?
+            Already an user?
             <a
-              href="/signup"
-              onClick={handleSignupLinkClick}
+              href="/login"
+              onClick={handleLoginLinkClick}
               style={{ marginLeft: "10px" }}
             >
-              signup
+              login
             </a>
           </div>
         </>
