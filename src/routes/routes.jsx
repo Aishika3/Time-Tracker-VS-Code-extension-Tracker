@@ -7,7 +7,7 @@ import { Login } from "../Projects/Users/Login_Page/login";
 
 const PageRoutes = () => {
   return (
-    <BrowserRouter>
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/list-of-projects" element={<ListOfProjects />} />
@@ -17,7 +17,7 @@ const PageRoutes = () => {
         />
         <Route path="/log-in" element={<Login />} />
       </Routes>
-    </BrowserRouter>
+    </div>
   );
 };
 
