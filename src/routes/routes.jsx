@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "../Projects/Home/home";
 import ListOfProjects from "../Projects/List of Projects-Section/listofprojects";
 import VisualRepresentation from "../Projects/time-tracker-section/visual-representation/visualrepresentation";

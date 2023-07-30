@@ -1,0 +1,15 @@
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem;
+  width: 100%;
+}
+
+.navlink {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
