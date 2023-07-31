@@ -6,10 +6,27 @@
   width: 100%;
 }
 
-.navlink {
+.navlink,
+.active {
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
   &:hover {
     transform: scale(1.1);
+    background-color: #559cad;
+    color: #fff;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.2);
   }
+}
+
+.navlink {
+  background: #c1b2ab;
+  color: #6d5a52;
+}
+.active {
+  background-color: #559cad;
+  color: #fff;
 }
